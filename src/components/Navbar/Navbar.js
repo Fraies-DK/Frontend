@@ -16,6 +16,7 @@ export default class NavbarMenu extends React.Component {
     logout() {
         cookies.remove('_s');
         window.location.reload();
+        window.location.href = '/login';
     }
     
     render() {
@@ -35,7 +36,7 @@ export default class NavbarMenu extends React.Component {
                                         <FontAwesomeIcon icon={faUserCircle} />
                                     </Row>
                                     <Row>
-                                        #USUARIO#
+                                        <p>Admin</p>
                                     </Row>
                                 </Dropdown.Header>
                                 <Dropdown.Divider></Dropdown.Divider>
